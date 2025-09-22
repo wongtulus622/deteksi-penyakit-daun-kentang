@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda | Sistem Daun Kentang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Sistem Daun Kentang</div>
+    <ul>
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="bantuan.html">Bantuan</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Mendeteksi Penyakit Daun Kentang Sebelum Terlambat!</h1>
+      <p>Upload foto daun kentang Anda, sistem akan menganalisis apakah sehat atau terkena penyakit.</p>
+
+      <label class="upload-box">
+        <input type="file" id="fileInput" onchange="previewImage(event)">
+        <div id="uploadText">📤 Klik untuk upload foto<br><small>atau seret file ke sini</small></div>
+        <div id="preview-container" class="preview-container" style="display:none;">
+          <img id="preview" alt="Preview Foto">
+          <button type="button" class="btn-cancel" onclick="cancelPreview()">❌ Batalkan</button>
+        </div>
+      </label>
+
+      <button class="btn" onclick="analyzePhoto()">Analisis Foto</button>
+    </div>
+  </div>
+
+  <footer>© 2025 Sistem Deteksi Daun Kentang</footer>
+  <script src="script.js"></script>
+</body>
+</html>

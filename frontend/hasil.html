@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasil Analisis | Sistem Daun Kentang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Sistem Daun Kentang</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="bantuan.html">Bantuan</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h1>Hasil Analisis</h1>
+
+      <!-- Preview gambar hasil -->
+      <div id="hasil-img-container" class="preview-container" style="margin-bottom:16px;">
+        <img id="hasil-preview" class="hasil-img" src="" alt="Foto yang dianalisis">
+      </div>
+
+      <p id="result"><b>Daun kentang terdeteksi:</b> <span id="hasil-label"></span></p>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <p id="rekomendasi" class="rekomendasi"></p>
+
+      <button class="btn" onclick="window.location.href='index.html'">🔙 Kembali</button>
+    </div>
+  </div>
+
+  <footer>© 2025 Sistem Deteksi Daun Kentang</footer>
+  <script src="script.js"></script>
+</body>
+</html>

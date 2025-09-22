@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  background: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Container & Card */
+.container {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 24px;
+}
+.card {
+  background: white;
+  padding: 34px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+}
+.card h1 {
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+.card p {
+  margin-bottom: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Upload box */
+.upload-box {
+  display: inline-block;
+  width: 100%;
+  max-width: 480px;
+  margin: 16px auto;
+  padding: 28px;
+  border: 2px dashed #2e7d32;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.upload-box input {
+  display: none;
+}
+.upload-box img {
+  max-width: 240px;
+  margin-top: 12px;
+  border-radius: 8px;
+}
+
+/* Cancel button */
+.btn-cancel {
+  background: #d32f2f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.btn-cancel:hover {
+  background: #b71c1c;
+}
+
+/* Preview container */
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* Progress */
+.progress {
+  width: 100%;
+  background: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+.progress-bar {
+  height: 24px;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Warna progress sesuai label */
+.progress-bar.healthy { background: #2e7d32; }      /* hijau */
+.progress-bar.early { background: #f9a825; }        /* oranye */
+.progress-bar.late { background: #d32f2f; }         /* merah */
+
+/* Label hasil */
+#hasil-label {
+  font-weight: 700;
+  font-size: 18px;
+}
+#hasil-label.healthy { color: #2e7d32; }
+#hasil-label.early { color: #f9a825; }
+#hasil-label.late { color: #d32f2f; }
+
+/* Gambar hasil */
+.hasil-img {
+  max-width: 240px;
+  margin: 12px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Bantuan list */
+.card ol {
+  text-align: left;
+  line-height: 1.8;
+}

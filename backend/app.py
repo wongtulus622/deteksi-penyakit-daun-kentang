@@ -3,7 +3,7 @@ import joblib, cv2, numpy as np
 from skimage.feature import graycomatrix, graycoprops
 from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(_name_)
 CORS(app)
 
 # load model
@@ -72,6 +72,6 @@ def predict():
         "advice": advice
     })
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     app.run(debug=True)
 
